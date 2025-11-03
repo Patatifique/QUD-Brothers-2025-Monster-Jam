@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!--   Physical phenomena object blueprints.   -->
 <objects>
   <object Name="Brothers_FungalSporeGasPuppet" Inherits="Gas">
     <part Name="Render" DisplayName="TEST fungal spores" />
