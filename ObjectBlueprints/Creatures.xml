@@ -5,7 +5,33 @@
 	<object Name="Brothers_Puppets_Puffer" Inherits="FungusPuffer">
 		<part Name="Render" Tile="Creatures/dreadpuff.png" RenderIfDark="true" DisplayName="{{w|brooding umberpuff}}" RenderString="231" ColorString="&amp;w" DetailColor="M" />
 		<part Name="Description" Short="Bay gills tense and release, tense and release, tense and release, as if drawing breath into the puffer's stem. With each exhalation it belches a cloud of copper spores like motes of dusk. They flutter back to the cap and congeal into a dull plasma." />
-		<tag Name="Species" Value="dreadpuff" />
+		<tag Name="Species" Value="umberpuff" />
 	</object>
 
+	<object Name="Brothers_Puppets_ZombieBase" Inherits="MutatedFungus">
+		<part Name="Render" DisplayName="dybbuk" Tile="Creatures/zantelope.png" ColorString="&amp;w" DetailColor="M" RenderString="Z" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<stat Name="Level" Value="15" />
+		<stat Name="Strength" sValue="16,1d3,(t)d1" />
+		<stat Name="Agility" sValue="16,1d3,(t)d1" />
+		<stat Name="Toughness" sValue="16,1d3,(t)d1" />
+		<skill Name="Tactics_Run" />
+		<skill Name="Acrobatics_Jump" />
+		<inventoryobject Blueprint="Brothers_Puppets_Tentacle" Number="2" />
+		<inventoryobject Blueprint="Brothers_PuppetInfection" Number="1" />
+		<tag Name="Species" Value="dybbuk" />
+	</object>
+	
+	<object Name="Brothers_Puppets_Tentacle" Inherits="NaturalWeapon">
+		<part Name="Render" DisplayName="{{w|grubby ascomata}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;w" />
+		<part Name="MeleeWeapon" BaseDamage="2d3" Skill="Cudgel" Stat="Strength" Slot="Hand" />
+		<part Name="LatchesOn" InitialSaveTarget="14" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility" MoveSaveTarget="14" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="14" BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false" AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="false" />
+		<tag Name="Gender" Value="plural" />
+	</object>
+
+	<object Name="Brothers_Puppets_ZombieAntelope" Inherits="Brothers_Puppets_ZombieBase">
+		<part Name="Render" DisplayName="antelope dybbuk" Tile="Creatures/zantelope.png" />
+		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the shiny skin, the hispid skin, the spheric hooves." />
+	</object>
+	
 </objects>
