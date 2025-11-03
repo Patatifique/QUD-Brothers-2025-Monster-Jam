@@ -6,7 +6,6 @@ using System.CodeDom.Compiler;
 using XRL.World.Capabilities;
 
 using ConsoleLib.Console;
-using System;
 using XRL.Wish;
 using XRL.World.Parts;
 using XRL.World.Parts.Mutation;
@@ -46,22 +45,26 @@ namespace XRL.World.Parts
             if (!dying.IsValid() || dying != this.ParentObject.Equipped || !this.ParentObject.IsWorn())
                 return true;
 
+            //Get zombie blueprint name
+            string zombieName = Brothers_ZombieNameBuilder.GetZombieName(dying);
+
+            if (zombieName == null)
+                return true; // early exit if dybbuk
+
             // print message
             IComponent<XRL.World.GameObject>.AddPlayerMessage(
-                $"{dying.the}{dying.DisplayNameOnly} succumbs... and turns into an annoying dog :^)"
+                $"{dying.the}{dying.DisplayNameOnly} succumbs... and turns into a zombie...)"
             );
 
-            // replace corpse (with dog for now lmao)
+            // replace corpse with zombie
             Corpse Part;
             if (dying.TryGetPart<Corpse>(out Part))
             {
                 Part.CorpseChance = 100;
                 Part.BurntCorpseChance = 0;
                 Part.VaporizedCorpseChance = 0;
-                Part.CorpseBlueprint = "Dog";
-
+                Part.CorpseBlueprint = zombieName;
             }
-
 
             return base.HandleEvent(E);
         }
