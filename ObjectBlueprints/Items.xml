@@ -6,5 +6,6 @@
 		<part Name="Render" DisplayName="{{G|puppet infection}}" Tile="Items/sw_ficklegill.bmp" ColorString="&amp;G" DetailColor="y" />
 		<part Name="Brothers_PuppetInfection" ColorString="w" />
 		<part Name="Description" Short="Tiny spore-motes flutter down from the fleshy gills that twitch on the striated skin. Trapped inside are another thousand spores waiting to be jostled free." />
+		<part Name="Brothers_TurnIntoZombieOnDeath"/>
 	</object>
 </objects>
