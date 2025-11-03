@@ -8,9 +8,7 @@
 		<part Name="Brain" Hostile="false" Wanders="false" Mobile="false" Factions="Fungi-100" />
 		<part Name="Corpse" CorpseChance="0" CorpseBlueprint="Dreadroot Tuber" />
 		<tag Name="Species" Value="umberpuff" />
-
 		<mutation Name="Brothers_ZSporePuffer" />
-		
 		<stat Name="Hitpoints" Value="150" />
 		<stat Name="Level" Value="23" />
 		<tag Name="Noswap" />
@@ -18,7 +16,6 @@
 		<tag Name="DynamicObjectsTable:Fungal_Creatures" />
 		<tag Name="ExcludeFromVillageZero" />
 		<tag Name="AggregateWith" Value="Brothers_Puppets_Puffer" />
-		<tag Name="BaseObject" Value="*noinherit" />
 	</object>
 
 	<object Name="Brothers_Puppets_ZombieBase" Inherits="MutatedFungus">
