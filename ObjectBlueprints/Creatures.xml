@@ -75,7 +75,7 @@
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the artfulness, the gentle stillness, the childlike wonder." />
 	</object>
 
-	<object Name="Brothers_Puppets_ZombieBipedalRobot" Inherits="Brothers_Puppets_ZombieBase">
+	<object Name="Brothers_Puppets_ZombieBipedal robot" Inherits="Brothers_Puppets_ZombieBase">
 		<part Name="Render" DisplayName="robot dybbuk" Tile="Creatures/zbipedalrobot.png" />
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the chromium sheen, the winking diodes, the air vents." />
 	</object>
@@ -180,7 +180,7 @@
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the curled horns, the taut skin, the spheric hooves." />
 	</object>		
 	
-	<object Name="Brothers_Puppets_ZombieHexapodalRobot" Inherits="Brothers_Puppets_ZombieBase">
+	<object Name="Brothers_Puppets_ZombieHexapedal robot" Inherits="Brothers_Puppets_ZombieBase">
 		<part Name="Render" DisplayName="robot dybbuk" Tile="Creatures/zhexapodalrobot.png" />
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the chromium sheen, the winking diodes, the air vents." />
 	</object>
@@ -200,7 +200,7 @@
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the tall forehead, the outstretched legs, the eyes full of wonder." />
 	</object>
 	
-	<object Name="Brothers_Puppets_ZombieHumanoidRobot" Inherits="Brothers_Puppets_ZombieBase">
+	<object Name="Brothers_Puppets_ZombieHumanoid robot" Inherits="Brothers_Puppets_ZombieBase">
 		<part Name="Render" DisplayName="robot dybbuk" Tile="Creatures/zhumanoidrobot.png" />
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the chromium sheen, the winking diodes, the air vents." />
 	</object>	
@@ -215,7 +215,7 @@
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the diaphanous wings, the airy spiracles, the photofractal eyes." />
 	</object>
 	
-	<object Name="Brothers_Puppets_ZombieIronMaiden" Inherits="Brothers_Puppets_ZombieBase">
+	<object Name="Brothers_Puppets_ZombieIron maiden" Inherits="Brothers_Puppets_ZombieBase">
 		<part Name="Render" DisplayName="iron maiden dybbuk" Tile="Creatures/zironmaiden.png" />
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the artfulness, the gentle stillness, the childlike wonder." />
 	</object>	
@@ -240,7 +240,7 @@
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the sharp claws, the wordless prayers, the osseous shell." />
 	</object>
 
-	<object Name="Brothers_Puppets_ZombieMopangoCharioteer" Inherits="Brothers_Puppets_ZombieBase">
+	<object Name="Brothers_Puppets_ZombieMopango charioteer" Inherits="Brothers_Puppets_ZombieBase">
 		<part Name="Render" DisplayName="mopango charioteer dybbuk" Tile="Creatures/zmopangocharioteer.png" />
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the sharp claws, the wordless prayers, the osseous shell." />
 	</object>
@@ -259,8 +259,13 @@
 		<part Name="Render" DisplayName="ooze dybbuk" Tile="Creatures/zooze.png" />
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the flawless geometry, the translucence, the peaceful squish." />
 	</object>
+	
+	<object Name="Brothers_Puppets_ZombieAmoeba" Inherits="Brothers_Puppets_ZombieBase">
+		<part Name="Render" DisplayName="amoeba dybbuk" Tile="Creatures/zooze.png" />
+		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the flawless geometry, the translucence, the peaceful squish." />
+	</object>
 
-	<object Name="Brothers_Puppets_ZombieQuadrupedalRobot" Inherits="Brothers_Puppets_ZombieBase">
+	<object Name="Brothers_Puppets_ZombieQuadrupedal robot" Inherits="Brothers_Puppets_ZombieBase">
 		<part Name="Render" DisplayName="robot dybbuk" Tile="Creatures/zquadrupedalrobot.png" />
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the chromium sheen, the winking diodes, the air vents." />
 	</object>
@@ -325,7 +330,7 @@
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the enormity, the verdurous bearing, the gentle stillness." />
 	</object>
 
-	<object Name="Brothers_Puppets_ZombieTripedalRobot" Inherits="Brothers_Puppets_ZombieBase">
+	<object Name="Brothers_Puppets_ZombieTripedal robot" Inherits="Brothers_Puppets_ZombieBase">
 		<part Name="Render" DisplayName="robot dybbuk" Tile="Creatures/ztripedalrobot.png" />
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the chromium sheen, the winking diodes, the air vents." />
 	</object>
@@ -360,7 +365,7 @@
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the artfulness, the gentle stillness, the childlike wonder." />
 	</object>	
 	
-	<object Name="Brothers_Puppets_ZombieWheeledRobot" Inherits="Brothers_Puppets_ZombieBase">
+	<object Name="Brothers_Puppets_ZombieWheeled robot" Inherits="Brothers_Puppets_ZombieBase">
 		<part Name="Render" DisplayName="robot dybbuk" Tile="Creatures/zwheeledrobot.png" />
 		<part Name="Description" Short="Fungi puppeteers expired flesh without remembrance of its host's base form, a non-neural mockery of life. Ascomata extend a shumbling gait forward: gone are the chromium sheen, the winking diodes, the air vents." />
 	</object>		
