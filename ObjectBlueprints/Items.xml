@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <objects>
-	
-	
+	<object Name="Brothers_PuppetInfection" Inherits="FungalInfection">
+		<part Name="Physics" Weight="2" />
+		<part Name="Render" DisplayName="{{G|puppet infection}}" Tile="Items/sw_ficklegill.bmp" ColorString="&amp;G" DetailColor="y" />
+		<part Name="Brothers_PuppetInfection" ColorString="w" />
+		<part Name="Description" Short="Tiny spore-motes flutter down from the fleshy gills that twitch on the striated skin. Trapped inside are another thousand spores waiting to be jostled free." />
+	</object>
 </objects>
