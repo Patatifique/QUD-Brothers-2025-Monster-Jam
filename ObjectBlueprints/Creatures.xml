@@ -16,7 +16,6 @@
 		<tag Name="DynamicObjectsTable:Fungal_Creatures" />
 		<tag Name="ExcludeFromVillageZero" />
 		<tag Name="AggregateWith" Value="Brothers_Puppets_Puffer" />
-		<tag Name="BaseObject" Value="*noinherit" />
 	</object>
 
 	<object Name="Brothers_Puppets_ZombieBase" Inherits="MutatedFungus">
