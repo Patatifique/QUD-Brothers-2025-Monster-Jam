@@ -3,8 +3,8 @@
 <objects>
 	<object Name="Brothers_PuppetInfection" Inherits="FungalInfection">
 		<part Name="Physics" Weight="2" />
-		<part Name="Render" DisplayName="{{G|puppet infection}}" Tile="Items/sw_ficklegill.bmp" ColorString="&amp;G" DetailColor="y" />
+		<part Name="Render" DisplayName="{{w|puppet stalks}}" Tile="Items/puppetstalks.png" ColorString="&amp;w" DetailColor="M" />
 		<part Name="Brothers_PuppetInfection" ColorString="w" />
-		<part Name="Description" Short="Tiny spore-motes flutter down from the fleshy gills that twitch on the striated skin. Trapped inside are another thousand spores waiting to be jostled free." />
+		<part Name="Description" Short="Ascomata rise in swaying spires from furrowed skin, sampling open air. Prospective descendance is arrayed in spores, poised to take over decomissioned synapses." />
 	</object>
 </objects>
