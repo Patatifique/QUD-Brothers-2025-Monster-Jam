@@ -13,12 +13,8 @@ namespace XRL.World.Parts
     [Serializable]
     public class Brothers_PuppetInfection : IPart
     {
-        public string ColorString = "0";
+        public string ColorString = "&amp;w";
 
-        public override bool SameAs(IPart p)
-        {
-            return !((p as Brothers_PuppetInfection).ColorString != this.ColorString) && base.SameAs(p);
-        }
 
         public override bool AllowStaticRegistration() => false;
 
@@ -31,11 +27,6 @@ namespace XRL.World.Parts
 
         public bool Puff()
         {
-            if (this.ColorString.Length == 1)
-            {
-                Stat.ReseedFrom("PufferType");
-                this.ColorString = GameObjectFactory.Factory.Blueprints[Algorithms.RandomShuffle<string>((IEnumerable<string>)SporePuffer.PufferList)[Convert.ToInt32(this.ColorString)]].GetPartParameter<string>("Render", "ColorString");
-            }
             Cell currentCell = this.ParentObject.GetCurrentCell();
             if (currentCell == null)
                 return false;
@@ -73,7 +64,6 @@ namespace XRL.World.Parts
                     if (!localAdjacentCells[index].HasObjectWithPart("GasFungalSpores"))
                     {
                         GameObject gameObject2 = localAdjacentCells[index].AddObject("Brothers_FungalSporeGasPuppet");
-                        gameObject2.GetPart<Gas>().ColorString = this.ColorString;
                         gameObject2.GetPart<Gas>().Creator = gameObject1;
                     }
                 }
