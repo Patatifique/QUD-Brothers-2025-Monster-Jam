@@ -13,7 +13,7 @@ namespace XRL.World.Parts
     [Serializable]
     public class Brothers_PuppetInfection : IPart
     {
-        public string ColorString = "w";
+        public string ColorString = "0";
 
         public override bool SameAs(IPart p)
         {
@@ -34,8 +34,7 @@ namespace XRL.World.Parts
             if (this.ColorString.Length == 1)
             {
                 Stat.ReseedFrom("PufferType");
-                // commenting out to use fixed color
-                // this.ColorString = GameObjectFactory.Factory.Blueprints[Algorithms.RandomShuffle<string>((IEnumerable<string>)SporePuffer.PufferList)[Convert.ToInt32(this.ColorString)]].GetPartParameter<string>("Render", "ColorString");
+                this.ColorString = GameObjectFactory.Factory.Blueprints[Algorithms.RandomShuffle<string>((IEnumerable<string>)SporePuffer.PufferList)[Convert.ToInt32(this.ColorString)]].GetPartParameter<string>("Render", "ColorString");
             }
             Cell currentCell = this.ParentObject.GetCurrentCell();
             if (currentCell == null)
