@@ -12,7 +12,7 @@
 
 	<object Name="Brothers_Puppets_Hazmat" Inherits="BaseArmor">
 		<part Name="Armor" AV="4" DV="-2" Elec="10" Cold="10" Heat="10" Acid="18" WornOn="Body" />
-    <part Name="Render" DisplayName="{{plastifer|plastifer}} hazard suit" ColorString="&amp;W" DetailColor="K" Tile="Items/hazmat.png" />
+		<part Name="Render" DisplayName="{{plastifer|plastifer}} hazard suit" ColorString="&amp;W" DetailColor="K" Tile="Items/hazmat.png" />
 		<part Name="Commerce" Value="950" />
 		<part Name="Description" Short="Gas-caught foam was stiffened into a membrane of rubber seals, forming a portable sanctuary of tepid air. The muffled world awaits beyond marble polymer, dust and spores breaking against the polymer shores." />
 		<part Name="GasMask" Power="8" />
@@ -21,6 +21,7 @@
 		<tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
 	    <tag Name="UsesSlots" Value="Body,Head,Face" />
 		<tag Name="Tier" Value="4" />
+		<part Name="Brothers_ImmuneToSpores" />
 	</object>
 	
 

@@ -28,12 +28,12 @@ namespace XRL.World.Parts
 
 
             // regular species logic
-            string species = props.GetValue<string, string>("SpeciesOverride")
-                             ?? tags.GetValue<string, string>("SpeciesOverride")
-                             ?? props.GetValue<string, string>("Species")
+            string species = tags.GetValue<string, string>("SpeciesOverride")
+                             ?? props.GetValue<string, string>("SpeciesOverride")
                              ?? tags.GetValue<string, string>("Species")
-                             ?? props.GetValue<string, string>("Class")
-                             ?? tags.GetValue<string, string>("Class");
+                             ?? props.GetValue<string, string>("Species")
+                             ?? tags.GetValue<string, string>("Class")
+                             ?? props.GetValue<string, string>("Class");
 
             return species; // Can be null
         }
@@ -48,7 +48,7 @@ namespace XRL.World.Parts
 
         public static string GetZombieName(GameObject obj)
         {
-            string species = GetSpecies(obj) ?? "Oddity";
+            string species = GetSpecies(obj);
             // Early return if species is dybbuk to avoid the infinite loop
             if (string.Equals(species, "dybbuk", StringComparison.OrdinalIgnoreCase))
                 return null;
@@ -58,10 +58,33 @@ namespace XRL.World.Parts
             // Check blueprint existence
             string blueprintId = $"Brothers_Puppets_Zombie{species}";
             GameObjectBlueprint blueprint;
+            
+            
             if (!GameObjectFactory.Factory.Blueprints.TryGetValue(blueprintId, out blueprint))
             {
-                // Fallback if blueprint doesn't exist
-                blueprintId = "Brothers_Puppets_ZombieOddity";
+                //check again but with just the class
+                var tags = obj.GetBlueprint().Tags;
+
+                if (obj.HasTag("Corpse"))
+                {
+                    string sourceBlueprint = obj.GetStringProperty("SourceBlueprint");
+                    if (!string.IsNullOrEmpty(sourceBlueprint) &&
+                        GameObjectFactory.Factory.Blueprints.TryGetValue(sourceBlueprint, out var blueprintVar))
+                    {
+                        tags = blueprintVar.Tags;
+                    }
+                }
+                string newSpecies = tags.GetValue<string, string>("Class") ?? obj.Property.GetValue<string, string>("Class");
+                if (!string.IsNullOrEmpty(newSpecies))
+                {
+                    newSpecies = Capitalize(newSpecies);
+                    blueprintId = $"Brothers_Puppets_Zombie{newSpecies}";
+                }
+                else
+                {
+                    // Fallback if blueprint doesn't exist
+                    blueprintId = "Brothers_Puppets_ZombieOddity";
+                }
             }
 
             return blueprintId;
