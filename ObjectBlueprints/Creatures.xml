@@ -18,6 +18,8 @@
 		<tag Name="AggregateWith" Value="Brothers_Puppets_Puffer" />
 	</object>
 
+	<!--Base Zombie-->
+
 	<object Name="Brothers_Puppets_ZombieBase" Inherits="MutatedFungus">
 		<part Name="Render" DisplayName="dybbuk" Tile="Creatures/zantelope.png" ColorString="&amp;w" DetailColor="M" RenderString="Z" />
 		<tag Name="BaseObject" Value="*noinherit" />
@@ -39,6 +41,16 @@
 		<part Name="LatchesOn" InitialSaveTarget="14" InitialSaveStat="Agility" InitialSaveDifficultyStat="Agility" MoveSaveTarget="14" MoveSaveStat="Strength" MoveSaveDifficultyStat="Strength" BreakSaveTarget="14" BreakSaveStat="Strength" BreakSaveDifficultyStat="Strength" Duration="3d4" AutoAttackOnMove="false" AutoAttackOnMoveAway="false" AutoAttackPerTurn="true" BloodSpatterOnLatch="false" />
 		<tag Name="Gender" Value="plural" />
 	</object>
+
+	<!--Special quest Zombie Variant-->
+
+	<object Name="Brothers_Puppets_NoddDybbuk" Inherits="Brothers_Puppets_ZombieUrshiib">
+		<part Name="QuestStepFinisher" Trigger="Seen" Quest="Save Who You Can Save" Step="Determine the Fate of the the Barathrumite Expedition" />
+		<inventoryobject Blueprint="Brothers_Puppets_Logs" Number="1" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+
+	<!--Zombie Variants-->
 
 	<object Name="Brothers_Puppets_ZombieAntelope" Inherits="Brothers_Puppets_ZombieBase">
 		<part Name="Render" DisplayName="antelope dybbuk" Tile="Creatures/zantelope.png" />
