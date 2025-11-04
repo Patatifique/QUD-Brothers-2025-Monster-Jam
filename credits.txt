@@ -4,4 +4,4 @@
 - C# Coding: Patatifique
 - Spritework: Balthichou
 - Writing: Balthichou
-- XML Formatting: Patatifique
+- XML Formatting: Balthichou & Patatifique
