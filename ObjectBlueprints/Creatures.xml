@@ -2,11 +2,12 @@
 <objects>
 
 
-	<object Name="Brothers_Puppet_DeadManWalking" Inherits="Urshiib">
-		<part Name="Render" DisplayName="Dead Man Walking" Tile="creatures/sw_barathrumite.bmp" ColorString="&amp;Y" DetailColor="b" RenderString="b" />
+	<object Name="Brothers_Puppet_DeadManWalking" Inherits="Barathrumite Arconaut">
+		<part Name="Render" DisplayName="dying arconaut" Tile="creatures/deadman.png" ColorString="&amp;Y" DetailColor="M" RenderString="b" />
 		<part Name="Brain" Wanders="false" Hostile="false" Calm="True"/>
 		<part Name="ConversationScript" ConversationID="Brothers_Puppet_DeadManWalking" />
 		<tag Name="NoSleep" />
+		<tag Name="NoTrade" />
 		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 		<inventoryobject Blueprint="Brothers_PuppetInfection" Number="1" />
 		<part Name="Brothers_DeathTimer" Timer="15" />
