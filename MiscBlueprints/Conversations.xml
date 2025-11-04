@@ -22,7 +22,7 @@
 	<conversation ID="Hortensa" Load="Merge">
 		
 		<start ID="Greetings" Load="Merge">
-		<choice GotoID="Looking" IfHaveActiveQuest="Save Who You Can Save" IfNotFinishedQuestStep="Save Who You Can Save~Talk to Hortensa" Priority="1">Q Girl told me you were looking for me?</choice>
+		<choice GotoID="Looking" IfHaveActiveQuest="Save Who You Can Save" IfNotFinishedQuestStep="Save Who You Can Save~Talk to Hortensa" Priority="1">Q Girl said you were looking for me?</choice>
 		<choice GotoID="Nodd" IfHaveActiveQuest="Save Who You Can Save" IfFinishedQuestStep="Save Who You Can Save~Talk to Hortensa" Priority="1">About the Barathrumite expedition to Nodd...</choice>
 		</start>
 
