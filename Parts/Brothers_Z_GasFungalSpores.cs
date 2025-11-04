@@ -70,7 +70,11 @@ namespace XRL.World.Parts
                 IComponent<GameObject>.AddPlayerMessage($"A zombie rises from {Object.the}{Object.DisplayNameOnly}.");
 
                 // remove corpse and spawn zombie
-                GameObject zombie = GameObject.Create("Dog");
+                
+                //Get zombie blueprint name
+                string zombieName = Brothers_ZombieNameBuilder.GetZombieName(Object);
+
+                GameObject zombie = GameObject.Create(zombieName);
                 Cell cell = Object.GetCurrentCell();
                 if (cell != null)
                 {

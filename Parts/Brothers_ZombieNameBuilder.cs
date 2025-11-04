@@ -15,6 +15,19 @@ namespace XRL.World.Parts
             var props = obj.Property;
             var tags = obj.GetBlueprint().Tags;
 
+            // corpse specific logic
+            if (obj.HasTag("Corpse"))
+            {
+                string sourceBlueprint = obj.GetStringProperty("SourceBlueprint");
+                if (!string.IsNullOrEmpty(sourceBlueprint) &&
+                    GameObjectFactory.Factory.Blueprints.TryGetValue(sourceBlueprint, out var blueprint))
+                {
+                    tags = blueprint.Tags;
+                }
+            }
+
+
+            // regular species logic
             string species = props.GetValue<string, string>("SpeciesOverride")
                              ?? tags.GetValue<string, string>("SpeciesOverride")
                              ?? props.GetValue<string, string>("Species")
