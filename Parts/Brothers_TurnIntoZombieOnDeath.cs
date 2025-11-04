@@ -53,7 +53,7 @@ namespace XRL.World.Parts
 
             // print message
             IComponent<XRL.World.GameObject>.AddPlayerMessage(
-                $"{dying.the}{dying.DisplayNameOnly} succumbs... and turns into a zombie...)"
+                $"{dying.the}{dying.DisplayNameOnly} keels over as fungal ascomata burst out, reshaped into a shambling dybbuk."
             );
 
             // replace corpse with zombie

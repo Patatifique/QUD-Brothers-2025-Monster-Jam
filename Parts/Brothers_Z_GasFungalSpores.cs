@@ -67,7 +67,7 @@ namespace XRL.World.Parts
             if (Object.HasTag("Corpse"))
             {
                 // display message
-                IComponent<GameObject>.AddPlayerMessage($"A zombie rises from {Object.the}{Object.DisplayNameOnly}.");
+                IComponent<GameObject>.AddPlayerMessage($"Swarming ascomata burst out from {Object.the}{Object.DisplayNameOnly}, reshaped into a shambling dybbuk.");
 
                 // remove corpse and spawn zombie
                 
