@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <conversations>
+
+
+	<conversation ID="Brothers_Puppet_DeadManWalking">
+		<node ID="Start">
+			<text>
+				*dies of cringe*
+			</text>
+			<choice GotoID="End">Die and drink.</choice>
+		</node>
+	</conversation>
 	
 	<conversation ID="Q Girl">
 		
