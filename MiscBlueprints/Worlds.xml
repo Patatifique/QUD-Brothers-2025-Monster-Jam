@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<worlds>
+	<world Name="JoppaWorld" Load="Merge">
+		<cell Name="Brothers_CellNodd" Inherits="Hills" ApplyTo="Brothers_TerrainNodd" LandingZone="1,2" Mutable="false">
+			<zone Level="5-9" x="0-2" y="0-2" Name="sky above Nodd" IndefiniteArticle="the" >
+				<builder Class="Sky" />
+			</zone>
+			<zone Level="10" x="0" y="0" Name="northwestern outskirts" NameContext="Nodd" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" >
+				<map FileName="Brothers_NoddNorthwest.rpm" />
+			</zone>
+			<zone Level="10" x="1" y="0" Name="northern outskirts" NameContext="Nodd" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" >
+				<map FileName="Brothers_NoddNorth.rpm" />
+			</zone>
+			<zone Level="10" x="2" y="0" Name="northeastern outskirts" NameContext="Nodd" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" >
+				<map FileName="Brothers_NoddNortheast.rpm" />
+			</zone>
+			<zone Level="10" x="0" y="1" Name="western outskirts" NameContext="Nodd" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" >
+				<map FileName="Brothers_NoddWest.rpm" />
+			</zone>
+			<zone Level="10" x="1" y="1" Name="Nodd" ProperName="true" IncludeStratumInZoneDisplay="false" >
+				<map FileName="Brothers_NoddCenter.rpm" />
+				<builder Class="Music" Track="Onward" Chance="100" />
+			</zone>
+			<zone Level="10" x="2" y="1" Name="eastern outskirts" NameContext="Nodd" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" >
+				<map FileName="Brothers_NoddEast.rpm" />
+				<builder Class="Music" Track="Onward" Chance="100" />
+			</zone>
+			<zone Level="10" x="0" y="2" Name="southwestern outskirts" NameContext="Nodd" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" >
+				<map FileName="Brothers_NoddSouthwest.rpm" />
+			</zone>
+			<zone Level="10" x="1" y="2" Name="southern outskirts" NameContext="Nodd" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" >
+				<map FileName="Brothers_NoddSouth.rpm" />
+				<builder Class="Music" Track="Onward" Chance="100" />
+			</zone>
+			<zone Level="10" x="2" y="2" Name="southeastern outskirts" NameContext="Nodd" IndefiniteArticle="some" IncludeStratumInZoneDisplay="false" HasWeather="true" WindSpeed="0-50" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="200-3000" >
+				<map FileName="Brothers_NoddSoutheast.rpm" />
+				<builder Class="Music" Track="Onward" Chance="100" />
+			</zone>
+		</cell>
+	</world>
+</worlds>
