@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <objects>
+
+
+	<object Name="LeBoug" Inherits="VillageZeroConvert">
+		<part Name="Render" DisplayName="Le boug qui meurt vite" Tile="Creatures/Issachari_convert.bmp" ColorString="&amp;C" DetailColor="R" RenderString="z" />
+		<part Name="Brothers_DeathTimer" Timer="15" />
+	</object>
+
 	<!--Creatures-->
 	
 	<object Name="Brothers_Puppets_Puffer" Inherits="MutatedFungus">
