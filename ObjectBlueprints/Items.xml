@@ -20,7 +20,7 @@
 		<part Name="Springy" Factor="0.8" />
 		<tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
 	    <tag Name="UsesSlots" Value="Body,Head,Face" />
-		<part Name="RulesDescription" Text="You are immune to fungal spores." />
+		<part Name="RulesDescription" Text="You are immune to fungal spores and protected against breathing in dangerous gases." />
 		<tag Name="Tier" Value="4" />
 		<part Name="Brothers_ImmuneToSpores" />
 	</object>
