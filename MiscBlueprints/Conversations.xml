@@ -3,12 +3,49 @@
 
 
 	<conversation ID="Brothers_Puppet_DeadManWalking">
+		
+		<node ID="Start" IfNotHaveState="Brothers_DeadUrshiib">
+			<text>
+				{{emote|*The urshiib pants, out-of-breath.*}}
+			
+				Please, listen to me. You have to turn back...</text>
+		<choice GotoID="Who">Who are you?</choice>
+		<choice GotoID="Late">What do you mean?</choice>	
+		<choice GotoID="End">I am not dealing with any of that. Live and drink.</choice>				
+		</node>
+	
+		<node ID="Who">
+			<text>
+				Barathrumite... member of the expedition sent here. We didn't know... couldn't know...</text>
+		<choice GotoID="Late" IfHaveActiveQuest="Save Who You Can Save" IfFinishedQuestStep="Save Who You Can Save~Talk to Hortensa">The Barathrumite expedition? Hortensa sends me. What happened here?</choice>
+		<choice GotoID="Late">Did not know what?</choice>	
+		</node>
+	
+		<node ID="Late">
+			<text>
+				{{emote|*The urshiib winces, rocking back and forth.*}}
+
+				... the stalks, they're everywhere! Everywhere! They got under my skin, I can feel them!</text>
+		<choice GotoID="Dying">You are going to be alright, please talk to me.</choice>
+		<choice GotoID="Dying">Pull yourself together! What happened?</choice>	
+		</node>	
+	
+		<node ID="Dying">
+			<text>
+				I'm sorry- I'm sorry- I'm sorry- I'm sorry- I'm sorry-
+				
+				{{emote|*The urshiib wimpers.*}}</text>
+		<choice GotoID="End" SetBooleanState="Brothers_DeadUrshiib,true">Do not move, I will check on the village and be right back.</choice>
+		<choice GotoID="End" SetBooleanState="Brothers_DeadUrshiib,true">I will see for myself. Live and drink.</choice>	
+		</node>	
+	
 		<node ID="Start">
 			<text>
-				*dies of cringe*
-			</text>
-			<choice GotoID="End">Die and drink.</choice>
+				{{emote|*The urshiib winces and blabbers incoherently.*}}</text>
+		<choice GotoID="End">Hold on, I will get some help.</choice>
+		<choice GotoID="End">If you want to stay there, I cannot help you.</choice>
 		</node>
+		
 	</conversation>
 	
 	<conversation ID="Q Girl">

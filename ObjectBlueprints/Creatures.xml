@@ -3,9 +3,10 @@
 
 
 	<object Name="Brothers_Puppet_DeadManWalking" Inherits="Barathrumite Arconaut">
-		<part Name="Render" DisplayName="dying arconaut" Tile="creatures/deadman.png" ColorString="&amp;Y" DetailColor="M" RenderString="b" />
+		<part Name="Render" DisplayName="arconaut" Tile="creatures/deadman.png" ColorString="&amp;Y" DetailColor="M" RenderString="b" />
 		<part Name="Brain" Wanders="false" Hostile="false" Calm="True"/>
 		<part Name="ConversationScript" ConversationID="Brothers_Puppet_DeadManWalking" />
+		<part Name="Description" Short="=pronouns.Possessive= hunched back is rippling with fungal growth. The nose at the end of =pronouns.possessive= bear-snout is wet and cracked. Long, slender, triple-jointed fingers sprout from =pronouns.possessive= pudgey paws and press against =pronouns.possessive= core in painful composure." />
 		<tag Name="NoSleep" />
 		<tag Name="NoTrade" />
 		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
